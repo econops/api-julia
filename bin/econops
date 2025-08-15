@@ -1,0 +1,11 @@
+#!/usr/bin/env julia
+
+# Simple executable script for the Econops CLI
+# Usage: ./bin/econops --route /status --method GET
+
+using Pkg
+Pkg.activate(@__DIR__ * "/..")
+
+using econops
+main()
+
