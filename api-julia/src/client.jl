@@ -96,7 +96,7 @@ and request signing.
 
 Args:
     token: API token. If not provided, will try to get from 'ECONOPS_TOKEN' environment variable.
-    base_url: Base URL for the API. Defaults to "https://econops.com:8000".
+    base_url: Base URL for the API. Defaults to "https://api.econops.com".
     use_cache: Whether to use response caching. Defaults to true.
     use_cert: Whether to use SSL certificate verification. Defaults to false for security.
 """
@@ -108,7 +108,7 @@ mutable struct Client
     headers::Dict{String, String}
     
     function Client(; token::Union{String, Nothing}=nothing, 
-                   base_url::String="https://econops.com:8000", 
+                   base_url::String="https://api.econops.com", 
                    use_cache::Bool=true,
                    use_cert::Bool=false)
         

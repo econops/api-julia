@@ -57,11 +57,11 @@ The main `Client` type provides methods to interact with the Econops API.
 #### Constructor
 
 ```julia
-Client(; token=nothing, base_url="https://econops.com:8000", use_cache=true)
+Client(; token=nothing, base_url="https://api.econops.com", use_cache=true)
 ```
 
 - `token` (String, optional): Your API token. If not provided, will try to get from `ECONOPS_TOKEN` environment variable.
-- `base_url` (String): Base URL for the API. Defaults to "https://econops.com:8000".
+- `base_url` (String): Base URL for the API. Defaults to "https://api.econops.com".
 - `use_cache` (Bool): Whether to use response caching. Defaults to true.
 
 #### Methods

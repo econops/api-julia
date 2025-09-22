@@ -21,7 +21,7 @@ function main()
     data_str = get(ENV, "ECONOPS_DATA", nothing)
     
     # Get base URL from environment or use default
-    base_url = get(ENV, "ECONOPS_BASE_URL", "https://econops.com:8000")
+    base_url = get(ENV, "ECONOPS_BASE_URL", "https://api.econops.com")
     
     # Get token from environment
     token = get(ENV, "ECONOPS_TOKEN", "demo")
